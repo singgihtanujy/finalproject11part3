@@ -17,4 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CucumberKW.runFeatureFile('Include/features/KAT-4 Singgih Final Test Mobile Android.feature')
+Mobile.startExistingApplication('com.example.mikebanks.bankscorpfinancial')
+
+Mobile.setText(findTestObject('Object Repository/login/android.widget.EditText - Username'), 'singsing', 5)
+
+Mobile.setText(findTestObject('Object Repository/login/android.widget.EditText - Password'), '123456', 5)
+
+Mobile.tap(findTestObject('Object Repository/login/android.widget.Button - LOGIN'), 5)
+
+Mobile.closeApplication()
+

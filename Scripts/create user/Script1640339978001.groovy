@@ -17,3 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+Mobile.startExistingApplication('com.example.mikebanks.bankscorpfinancial', FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Register/android.widget.Button - CREATE A PROFILE (1)'), 0)
+
+Mobile.setText(findTestObject('Object Repository/Register/android.widget.EditText - First Name (1)'), 'sing', 0)
+
+Mobile.setText(findTestObject('Object Repository/Register/android.widget.EditText - Last Name (1)'), 'sing', 0)
+
+Mobile.setText(findTestObject('Object Repository/Register/android.widget.EditText - Country (1)'), 'japan', 0)
+
+Mobile.setText(findTestObject('Object Repository/Register/android.widget.EditText - Username (1)'), 'singsing', 0)
+
+Mobile.setText(findTestObject('Object Repository/Register/android.widget.EditText - Password (1)'), '123456', 0)
+
+Mobile.setText(findTestObject('Object Repository/Register/android.widget.EditText - Confirm Password (1)'), '123456', 0)
+
+Mobile.tap(findTestObject('Object Repository/Register/android.widget.Button - Create Profile (1)'), 0)
+
+Mobile.closeApplication()
+
